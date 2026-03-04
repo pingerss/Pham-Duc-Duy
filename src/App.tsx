@@ -1,14 +1,17 @@
-import { Routes, Route } from "react-router";
-import { Home } from "./pages/Home";
-import { About } from "./pages/About";
+import { useEffect } from 'react';
+import { RouterProvider } from 'react-router';
+import { routes } from './config/routes';
+import students from './mock/students.json';
+import { storage } from './services/storages';
 
 function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-    </Routes>
-  );
+  useEffect(() => {
+    if (!storage.get('students')) {
+      storage.set('students', students);
+    }
+  }, []);
+
+  return <RouterProvider router={routes} />;
 }
 
 export default App;
