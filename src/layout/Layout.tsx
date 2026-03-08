@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router';
 import Sidebar from '../components/shared/Sidebar';
+import FomatUser from '../components/shared/FomatUser';
 
 type Props = {};
 
@@ -12,7 +13,9 @@ function Layout({}: Props) {
         <div className='max-w-7xl mx-auto p-8'>
           <Outlet />
         </div>
+            <FomatUser/>
       </main>
+
     </div>
   );
 }

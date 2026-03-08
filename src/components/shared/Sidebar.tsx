@@ -1,4 +1,4 @@
-import { GraduationCap, LayoutDashboard } from 'lucide-react';
+import { BarChart, Book, GraduationCap, LayoutDashboard, Presentation, Settings,  Users } from 'lucide-react';
 import { useNavigate } from 'react-router';
 
 function Sidebar() {
@@ -24,6 +24,58 @@ function Sidebar() {
             <a href='#' className='flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-gray-900 bg-gray-100 rounded-lg'>
               <LayoutDashboard className='w-5 h-5' />
               Dashboard
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+       <nav className='p-4'>
+        <ul className='space-y-2'>
+          <li>
+            <a href='#' className='flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-gray-900 bg-gray-100 rounded-lg'>
+              <Users className='w-5 h-5' />
+              Students
+            </a>
+          </li>
+        </ul>
+        
+      </nav>
+       <nav className='p-3'>
+        <ul className='space-y-2'>
+          <li>
+            <a href='#' className='flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-gray-900 bg-gray-100 rounded-lg'>
+              <Presentation className='w-5 h-5' />
+              Teachers
+            </a>
+          </li>
+        </ul>
+      </nav>
+       <nav className='p-3'>
+        <ul className='space-y-2'>
+          <li>
+            <a href='#' className='flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-gray-900 bg-gray-100 rounded-lg'>
+              <Book className='w-5 h-5' />
+             Books
+            </a>
+          </li>
+        </ul>
+      </nav>
+       <nav className='p-4'>
+        <ul className='space-y-2'>
+          <li>
+            <a href='#' className='flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-gray-900 bg-gray-100 rounded-lg'>
+              <BarChart className='w-5 h-5' />
+            Reports
+            </a>
+          </li>
+        </ul>
+      </nav>
+       <nav className='p-4'>
+        <ul className='space-y-2'>
+          <li>
+            <a href='#' className='flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-gray-900 bg-gray-100 rounded-lg'>
+              <Settings className='w-5 h-5' />
+              Settings
             </a>
           </li>
         </ul>
