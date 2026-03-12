@@ -16,9 +16,12 @@ function Sidebar() {
           onClick={onMenuToggle}>
           <GraduationCap />
         </button>
-        <h1 className='text-xl font-semibold text-gray-900'>YOOEDU</h1>
+       <div className='flex flex-col'>
+          <h1 className='text-xl font-semibold leading-tight text-blue-900'>EDUManager</h1>
+          <span className='text-sm font-medium text-blue-400'>Admin Dashboard</span>
+        </div>
       </div>
-      <nav className='p-4'>
+      <nav className='p-2'>
         <ul className='space-y-2'>
           <li>
             <a href='#' className='flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-gray-900 bg-gray-100 rounded-lg'>
@@ -29,7 +32,7 @@ function Sidebar() {
         </ul>
       </nav>
 
-       <nav className='p-4'>
+       <nav className='p-2'>
         <ul className='space-y-2'>
           <li>
             <a href='#' className='flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-gray-900 bg-gray-100 rounded-lg'>
@@ -40,7 +43,7 @@ function Sidebar() {
         </ul>
         
       </nav>
-       <nav className='p-3'>
+       <nav className='p-2'>
         <ul className='space-y-2'>
           <li>
             <a href='#' className='flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-gray-900 bg-gray-100 rounded-lg'>
@@ -50,7 +53,7 @@ function Sidebar() {
           </li>
         </ul>
       </nav>
-       <nav className='p-3'>
+       <nav className='p-2'>
         <ul className='space-y-2'>
           <li>
             <a href='#' className='flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-gray-900 bg-gray-100 rounded-lg'>
@@ -60,7 +63,7 @@ function Sidebar() {
           </li>
         </ul>
       </nav>
-       <nav className='p-4'>
+       <nav className='p-2'>
         <ul className='space-y-2'>
           <li>
             <a href='#' className='flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-gray-900 bg-gray-100 rounded-lg'>
@@ -70,7 +73,7 @@ function Sidebar() {
           </li>
         </ul>
       </nav>
-       <nav className='p-4'>
+       <nav className='p-2'>
         <ul className='space-y-2'>
           <li>
             <a href='#' className='flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-gray-900 bg-gray-100 rounded-lg'>
